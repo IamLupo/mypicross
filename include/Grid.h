@@ -31,6 +31,7 @@
 	/* --- SET --- */
 	void setGrid_Horizontal_Info(Grid* g, unsigned int id, unsigned int length, unsigned int data[]);
 	void setGrid_Vertical_Info(Grid* g, unsigned int id, unsigned int length, unsigned int data[]);
+	void setGrid_Field_Value(Grid* g, unsigned int id, bool value);
 	void setGrid_EnableFields(Grid* g, unsigned int length, unsigned int data[]);
 	
 	/* --- IS --- */
@@ -39,9 +40,15 @@
 	bool isGrid_Horizontal_SolvedById(Grid* g, unsigned int id);
 	bool isGrid_Vertical_Correct(Grid* g, unsigned int id);
 	bool isGrid_Vertical_SolvedById(Grid* g, unsigned int id);
+	bool isGrid_Data_CheckByID(Grid* g, unsigned int id);
 	
+	/* --- COPY --- */
+	/*
+	void copyGrid(Grid* g_a, Grid* g_b);
+	void copyGrid_Data(Grid* g_a, Grid* g_b);
+	*/
 	/* --- SOLVE --- */
-	void solverGrid(Grid* g);
-	bool solverGrid_Generation(Grid* g, unsigned int level, unsigned int max_level, bool value);
+	bool solveGrid(Grid* g);
+	bool solveGrid_Generation(Grid* g, unsigned int level, unsigned int max_level);
 	
 #endif

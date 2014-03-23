@@ -102,6 +102,7 @@ int main() {
 		initSettings(&g);
 		
 		//Solution
+		/*
 		unsigned int enable[16] = {
 									0, 1, 4,
 									5, 6, 7, 9,
@@ -109,25 +110,18 @@ int main() {
 									15, 18, 19,
 									20, 24 };
 		setGrid_EnableFields(&g, 16, enable);
+		*/
 		
-		if(isGrid_Solved(&g)) {
+		if(solveGrid(&g)) {
 			cout << "Solved!" << endl;
+		} else {
+			cout << "No solution Found!" << endl;
 		}
+		
 				
 		//Draw
 		drawGrid(&g);
 		cout << endl;
-		
-		unsigned int i;
-		for(i = 0; i < g.length; i++) {
-			if(isGrid_Horizontal_Correct(&g, i))
-				cout << "Horizontal Correct " << i << endl;
-		}
-		
-		for(i = 0; i < g.length; i++) {
-			if(isGrid_Vertical_Correct(&g, i))
-				cout << "Vertical Correct " << i << endl;
-		}
 	}
 	catch (Error_Grid error) {
 		cout << "Grid error: " << error << endl;
