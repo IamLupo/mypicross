@@ -1,4 +1,4 @@
-#include "Grid.h"
+#include "GridInfo.h"
 
 /* --- IS --- */
 bool isGridInfo_Same(GridInfo* gi_a, GridInfo* gi_b) {

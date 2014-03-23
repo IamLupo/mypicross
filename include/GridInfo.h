@@ -1,7 +1,5 @@
 #ifndef H_GRIDINFO
 #define H_GRIDINFO
-	//#include "Grid.h"
-	
 	enum GridInfoType { GRIDINFO_TYPE_HORIZONTAL = 0, GRIDINFO_TYPE_VERTICAL = 1 };
 
 	struct GridInfo {

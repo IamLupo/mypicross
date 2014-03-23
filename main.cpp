@@ -17,17 +17,12 @@ void drawGrid(Grid* g) {
 	horizontal_maxlength = getGrid_Horizontal_MaxLength(g);
 	vertical_maxlength = getGrid_Vertical_MaxLength(g);
 	
-	//Init
+	//Space
 	empty_space = (char*)calloc(horizontal_maxlength + 1, sizeof(char));
 	for(i = 0; i < horizontal_maxlength; i++) {
 		empty_space[i] = ' ';
 	}
 	empty_space[horizontal_maxlength] = '\0';
-	
-	//Info
-	//cout << "Horizontal MaxLength = " << horizontal_maxlength << endl;
-	//cout << "Vertical MaxLength = " << vertical_maxlength << endl;
-	//cout << endl;
 	
 	//Draw Vertical
 	for(i = 0; i < vertical_maxlength; i++) {
@@ -108,7 +103,7 @@ int main() {
 		
 		//Solution
 		unsigned int enable[16] = {
-									0, 2, 4,
+									0, 1, 4,
 									5, 6, 7, 9,
 									10, 12, 13, 14,
 									15, 18, 19,

@@ -1,8 +1,8 @@
 #ifndef H_GRID
 #define H_GRID
+	#include <stdlib.h>
 	#include "GridInfo.h"
-	
-	//Still need to fix this part
+
 	enum Error_Grid {
 						ERROR_GRID_LENGTH,
 						ERROR_GRID_DATA,
