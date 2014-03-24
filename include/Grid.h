@@ -42,11 +42,6 @@
 	bool isGrid_Vertical_SolvedById(Grid* g, unsigned int id);
 	bool isGrid_Data_CheckByID(Grid* g, unsigned int id);
 	
-	/* --- COPY --- */
-	/*
-	void copyGrid(Grid* g_a, Grid* g_b);
-	void copyGrid_Data(Grid* g_a, Grid* g_b);
-	*/
 	/* --- SOLVE --- */
 	bool solveGrid(Grid* g);
 	bool solveGrid_Generation(Grid* g, unsigned int level, unsigned int max_level);
